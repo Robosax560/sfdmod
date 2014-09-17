@@ -1,0 +1,7 @@
+package com.zentechnologies.sfdmod.armory;
+
+import net.minecraft.tileentity.TileEntity;
+
+public class ComputerBlockTileEntity extends TileEntity{
+
+}

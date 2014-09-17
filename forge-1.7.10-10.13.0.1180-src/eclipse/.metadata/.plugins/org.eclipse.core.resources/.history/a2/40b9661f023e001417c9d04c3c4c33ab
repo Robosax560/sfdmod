@@ -1,0 +1,7 @@
+package com.zentechnologies.sfdmod.purifier;
+
+import BlockContainer;
+
+public class ComputerBlock extends BlockContainer {
+
+}
