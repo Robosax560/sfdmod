@@ -43,7 +43,7 @@ public class SFDMod
 	
 	//Components
     public static final Item cybronic_eye = new Item().setMaxStackSize(1).setUnlocalizedName("cybroniceye").setTextureName(SFDMod.MODID+":"+"cybronicEye");
-    public static final Item cleansedspidereye = new Item().setMaxStackSize(16).setUnlocalizedName("cleansedspidereye").setTextureName(SFDMod.MODID+":"+"cleansedSpiderEye");
+    public static final Item cleansed_spider_eye = new Item().setMaxStackSize(16).setUnlocalizedName("cleansedspidereye").setTextureName(SFDMod.MODID+":"+"cleansedSpiderEye");
     public static final Item cleansedsnakeeye = new Item().setMaxStackSize(16).setUnlocalizedName("cleansedsnakeeye").setTextureName(SFDMod.MODID+":"+"cleansedSnakeEye");
     public static final Item snakeeye = new Item().setMaxStackSize(16).setUnlocalizedName("snakeeye").setTextureName(SFDMod.MODID+":"+"SnakeEye");
     public static final Item compressedSteel = new Item().setMaxStackSize(64).setUnlocalizedName("compressedsteel").setTextureName(SFDMod.MODID+":"+"compressedSteel");
@@ -90,11 +90,11 @@ public class SFDMod
     public void init(FMLInitializationEvent event)
     {
     	//SETTING CREATIVE TAB
-    	addItem(cybronic_eye,cleansedspidereye, cleansedsnakeeye, compressedSteel,computerchip, snakeeye, Fabric, Copperwire, Hydraulic, Metafabric, Neuroplast, siliconBoule, basicCore, MFcore, Invisacore);
+    	addItem(cybronic_eye,cleansed_spider_eye, cleansedsnakeeye, compressedSteel,computerchip, snakeeye, Fabric, Copperwire, Hydraulic, Metafabric, Neuroplast, siliconBoule, basicCore, MFcore, Invisacore);
     	addBlock(manganeseOre, copperOre, computerBlock);
     	
     	//SETTING CRAFTING RECIPES
-    	GameRegistry.addShapelessRecipe(new ItemStack(SFDMod.cybronic_eye, 1), SFDMod.cleansedspidereye, SFDMod.computerchip);
+    	GameRegistry.addShapelessRecipe(new ItemStack(SFDMod.cybronic_eye, 1), SFDMod.cleansed_spider_eye, SFDMod.computerchip);
     	GameRegistry.addShapedRecipe(new ItemStack(SFDMod.basicCore,1), "gcg", "cdc","gcg",'c',SFDMod.computerchip,'g',Blocks.glass, 'd',Items.diamond);
     	GameRegistry.addShapedRecipe(new ItemStack(SFDMod.Hydraulic,1), "ccc", "cic","cic",'c',SFDMod.compressedSteel,'i',Items.iron_ingot);
     	GameRegistry.addShapedRecipe(new ItemStack(SFDMod.Invisacore,1), "fgf", "cbc","fgf",'c',SFDMod.computerchip,'g',Blocks.glass, 'b',SFDMod.basicCore,'f', SFDMod.Fabric);
