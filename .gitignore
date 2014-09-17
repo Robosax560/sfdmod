@@ -1,4 +1,15 @@
 #################
+## Gradle
+#################
+.classpath
+.gradle
+.settings
+.location
+*changelog.txt
+gradlew
+gradlew.bat
+
+#################
 ## Eclipse
 #################
 
