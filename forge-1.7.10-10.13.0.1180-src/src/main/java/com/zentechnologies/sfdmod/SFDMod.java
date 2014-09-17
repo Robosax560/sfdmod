@@ -37,32 +37,30 @@ public class SFDMod
     
 	//Purifier
 	private PurifierGuiHandler purifierGuiHandler = new PurifierGuiHandler();
-	
 	public static Block purifier;
 	public static Block purifierActive;
 	
-	//Components
-    public static final Item cybronic_eye = new Item().setMaxStackSize(1).setUnlocalizedName("cybroniceye").setTextureName(SFDMod.MODID+":"+"cybronicEye");
-    public static final Item cleansed_spider_eye = new Item().setMaxStackSize(16).setUnlocalizedName("cleansedspidereye").setTextureName(SFDMod.MODID+":"+"cleansedSpiderEye");
-    public static final Item cleansedsnakeeye = new Item().setMaxStackSize(16).setUnlocalizedName("cleansedsnakeeye").setTextureName(SFDMod.MODID+":"+"cleansedSnakeEye");
-    public static final Item snakeeye = new Item().setMaxStackSize(16).setUnlocalizedName("snakeeye").setTextureName(SFDMod.MODID+":"+"SnakeEye");
-    public static final Item compressedSteel = new Item().setMaxStackSize(64).setUnlocalizedName("compressedsteel").setTextureName(SFDMod.MODID+":"+"compressedSteel");
-    public static final Item Copperwire = new Item().setMaxStackSize(64).setUnlocalizedName("copperwire").setTextureName(SFDMod.MODID+":"+"copperwire");
-    public static final Item computerchip = new Item().setMaxStackSize(16).setUnlocalizedName("computerchip").setTextureName(SFDMod.MODID+":"+"computerChip");
-    public static final Item Fabric = new Item().setMaxStackSize(64).setUnlocalizedName("fabric").setTextureName(SFDMod.MODID+":"+"fabric");
-    public static final Item Hydraulic = new Item().setMaxStackSize(64).setUnlocalizedName("hydraulicpump").setTextureName(SFDMod.MODID+":"+"Hydraulicpump");
-    public static final Item Metafabric = new Item().setMaxStackSize(64).setUnlocalizedName("metafabric").setTextureName(SFDMod.MODID+":"+"Metafabric");
-    public static final Item Neuroplast = new Item().setMaxStackSize(64).setUnlocalizedName("neuroplast").setTextureName(SFDMod.MODID+":"+"Neuroplasts");
-    public static final Item siliconBoule = new Item().setMaxStackSize(64).setUnlocalizedName("siliconboule").setTextureName(SFDMod.MODID+":"+"siliconBoule");
-    public static final Item basicCore = new Item().setMaxStackSize(64).setUnlocalizedName("basiccore").setTextureName(SFDMod.MODID+":"+"basicCore");
-    public static final Item MFcore = new Item().setMaxStackSize(64).setUnlocalizedName("mfcore").setTextureName(SFDMod.MODID+":"+"MFcore");
-    public static final Item Invisacore = new Item().setMaxStackSize(64).setUnlocalizedName("invisacore").setTextureName(SFDMod.MODID+":"+"Invisacore");
+	//Items
+    public static final Item basic_core = new Item().setMaxStackSize(64).setUnlocalizedName("basic_core").setTextureName(SFDMod.MODID+":"+"basic_core");
+    public static final Item cleansed_snake_eye = new Item().setMaxStackSize(16).setUnlocalizedName("cleansed_snake_eye").setTextureName(SFDMod.MODID+":"+"cleansed_snake_eye");
+    public static final Item cleansed_spider_eye = new Item().setMaxStackSize(16).setUnlocalizedName("cleansed_spider_eye").setTextureName(SFDMod.MODID+":"+"cleansed_spider_eye");
+    public static final Item compressed_steel = new Item().setMaxStackSize(64).setUnlocalizedName("compressed_steel").setTextureName(SFDMod.MODID+":"+"compressed_steel");
+    public static final Item computer_chip = new Item().setMaxStackSize(16).setUnlocalizedName("computer_chip").setTextureName(SFDMod.MODID+":"+"computer_chip");
+    public static final Item copper_wire = new Item().setMaxStackSize(64).setUnlocalizedName("copper_wire").setTextureName(SFDMod.MODID+":"+"copper_wire");
+    public static final Item cybronic_eye = new Item().setMaxStackSize(1).setUnlocalizedName("cybronic_eye").setTextureName(SFDMod.MODID+":"+"cybronic_eye");
+    public static final Item fabric = new Item().setMaxStackSize(64).setUnlocalizedName("fabric").setTextureName(SFDMod.MODID+":"+"fabric");
+    public static final Item hydraulic_pump = new Item().setMaxStackSize(64).setUnlocalizedName("hydraulic_pump").setTextureName(SFDMod.MODID+":"+"hydraulic_pump");
+    public static final Item invisacore = new Item().setMaxStackSize(64).setUnlocalizedName("invisacore").setTextureName(SFDMod.MODID+":"+"invisacore");
+    public static final Item metafabric = new Item().setMaxStackSize(64).setUnlocalizedName("metafabric").setTextureName(SFDMod.MODID+":"+"metafabric");
+    public static final Item mfcore = new Item().setMaxStackSize(64).setUnlocalizedName("mfcore").setTextureName(SFDMod.MODID+":"+"mfcore");
+    public static final Item neuroplast = new Item().setMaxStackSize(64).setUnlocalizedName("neuroplast").setTextureName(SFDMod.MODID+":"+"neuroplast");
+    public static final Item silicon_boule = new Item().setMaxStackSize(64).setUnlocalizedName("silicon_boule").setTextureName(SFDMod.MODID+":"+"silicon_boule");
+    public static final Item snake_eye = new Item().setMaxStackSize(16).setUnlocalizedName("snake_eye").setTextureName(SFDMod.MODID+":"+"snake_eye");
 
-    //DECLARATIION OF BLOCKS
-    //public static final BlockPurifier purifier = (BlockPurifier) new BlockPurifier().setBlockName("purifier").setBlockTextureName("furnace");
-    public static final Block manganeseOre = new Block(Material.iron){}.setBlockName("manganeseore").setBlockTextureName("sfdmod:manganeseOre");
-    public static final Block copperOre = new Block(Material.iron){}.setBlockName("copperore").setBlockTextureName("sfdmod:copperOre");
-    public static final Block computerBlock = new ComputerBlock(Material.iron).setBlockName("computerblock").setBlockTextureName("iron_block");
+    //Blocks
+    public static final Block manganese_ore = new Block(Material.iron){}.setBlockName("manganese_ore").setBlockTextureName("sfdmod:manganese_ore");
+    public static final Block copper_ore = new Block(Material.iron){}.setBlockName("copper_ore").setBlockTextureName("sfdmod:copper_ore");
+    public static final Block computer_block = new ComputerBlock(Material.iron).setBlockName("computer_block").setBlockTextureName("iron_block");
     
     public static CreativeTabs sfdTab = new CreativeTabs("sfdmod"){
     	@Override
@@ -90,15 +88,16 @@ public class SFDMod
     public void init(FMLInitializationEvent event)
     {
     	//SETTING CREATIVE TAB
-    	addItem(cybronic_eye,cleansed_spider_eye, cleansedsnakeeye, compressedSteel,computerchip, snakeeye, Fabric, Copperwire, Hydraulic, Metafabric, Neuroplast, siliconBoule, basicCore, MFcore, Invisacore);
-    	addBlock(manganeseOre, copperOre, computerBlock);
+    	addItem(cybronic_eye,cleansed_spider_eye, cleansed_snake_eye, compressed_steel,computer_chip, snake_eye, fabric, 
+    			copper_wire, hydraulic_pump, metafabric, neuroplast, silicon_boule, basic_core, mfcore, invisacore);
+    	addBlock(manganese_ore, copper_ore, computer_block);
     	
     	//SETTING CRAFTING RECIPES
-    	GameRegistry.addShapelessRecipe(new ItemStack(SFDMod.cybronic_eye, 1), SFDMod.cleansed_spider_eye, SFDMod.computerchip);
-    	GameRegistry.addShapedRecipe(new ItemStack(SFDMod.basicCore,1), "gcg", "cdc","gcg",'c',SFDMod.computerchip,'g',Blocks.glass, 'd',Items.diamond);
-    	GameRegistry.addShapedRecipe(new ItemStack(SFDMod.Hydraulic,1), "ccc", "cic","cic",'c',SFDMod.compressedSteel,'i',Items.iron_ingot);
-    	GameRegistry.addShapedRecipe(new ItemStack(SFDMod.Invisacore,1), "fgf", "cbc","fgf",'c',SFDMod.computerchip,'g',Blocks.glass, 'b',SFDMod.basicCore,'f', SFDMod.Fabric);
-    	GameRegistry.addShapedRecipe(new ItemStack(SFDMod.MFcore,1), "fnf", "cbc","fnf",'c',SFDMod.computerchip,'n',SFDMod.Neuroplast, 'b',SFDMod.basicCore, 'f',SFDMod.Metafabric);
+    	GameRegistry.addShapelessRecipe(new ItemStack(SFDMod.cybronic_eye, 1), SFDMod.cleansed_spider_eye, SFDMod.computer_chip);
+    	GameRegistry.addShapedRecipe(new ItemStack(SFDMod.basic_core,1), "gcg", "cdc","gcg",'c',SFDMod.computer_chip,'g',Blocks.glass, 'd',Items.diamond);
+    	GameRegistry.addShapedRecipe(new ItemStack(SFDMod.hydraulic_pump,1), "ccc", "cic","cic",'c',SFDMod.compressed_steel,'i',Items.iron_ingot);
+    	GameRegistry.addShapedRecipe(new ItemStack(SFDMod.invisacore,1), "fgf", "cbc","fgf",'c',SFDMod.computer_chip,'g',Blocks.glass, 'b',SFDMod.basic_core,'f', SFDMod.fabric);
+    	GameRegistry.addShapedRecipe(new ItemStack(SFDMod.mfcore,1), "fnf", "cbc","fnf",'c',SFDMod.computer_chip,'n',SFDMod.neuroplast, 'b',SFDMod.basic_core, 'f',SFDMod.metafabric);
     }
     
 	@EventHandler

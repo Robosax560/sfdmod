@@ -32,8 +32,8 @@ public class PurifierRecipes
 
     private PurifierRecipes()
     {
-        this.addItemRecipe(Items.spider_eye, new ItemStack(SFDMod.cleansedspidereye), 0.35F);
-        this.addItemRecipe(SFDMod.snakeeye, new ItemStack(SFDMod.cleansedsnakeeye), 0.35F);
+        this.addItemRecipe(Items.spider_eye, new ItemStack(SFDMod.cleansed_spider_eye), 0.35F);
+        this.addItemRecipe(SFDMod.snake_eye, new ItemStack(SFDMod.cleansed_snake_eye), 0.35F);
 
     }
 

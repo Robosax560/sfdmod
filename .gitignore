@@ -8,6 +8,9 @@
 *changelog.txt
 gradlew
 gradlew.bat
+.gradle
+saves
+options.txt
 
 #################
 ## Eclipse
@@ -26,6 +29,7 @@ local.properties
 .classpath
 .settings/
 .loadpath
+logs/
 
 # External tool builders
 .externalToolBuilders/

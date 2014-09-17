@@ -1,27 +1,49 @@
-[18:44:48] [main/INFO]: Setting user: ForgeDevName
-[18:44:49] [Client thread/INFO]: LWJGL Version: 2.9.1
-[18:44:55] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:sfdmod, FMLFileResourcePack:Universal Electricity
-[18:44:57] [Sound Library Loader/INFO]: Sound engine started
-[18:44:58] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[18:44:58] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[18:44:58] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:sfdmod, FMLFileResourcePack:Universal Electricity
-[18:44:58] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[18:44:59] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[18:45:00] [Sound Library Loader/INFO]: Sound engine started
-[18:45:02] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[18:45:02] [Server thread/INFO]: Generating keypair
-[18:45:03] [Server thread/INFO]: Preparing start region for level 0
-[18:45:04] [Server thread/INFO]: Preparing spawn area: 86%
-[18:45:04] [Server thread/INFO]: ForgeDevName[local:E:e33100f1] logged in with entity id 27 at (-223.89180710056112, 73.52936759557846, -641.0809657711641)
-[18:45:04] [Server thread/INFO]: ForgeDevName joined the game
-[18:45:41] [Server thread/INFO]: Saving and pausing game...
-[18:45:41] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[18:45:41] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[18:45:41] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[18:45:42] [Server thread/INFO]: Stopping server
-[18:45:42] [Server thread/INFO]: Saving players
-[18:45:42] [Server thread/INFO]: Saving worlds
-[18:45:42] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[18:45:42] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[18:45:42] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[18:45:43] [Client thread/INFO]: Stopping!
+[21:20:37] [main/INFO]: No arguments specified, assuming client.
+[21:20:38] [main/INFO]: Extra: []
+[21:20:38] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/Joshua/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --username, ForgeDevName]
+[21:20:38] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[21:20:38] [main/INFO]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[21:20:38] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[21:20:38] [main/INFO]: Forge Mod Loader version 7.10.18.1180 for Minecraft 1.7.10 loading
+[21:20:38] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_05, running on Windows 8.1:amd64:6.3, installed at C:\Program Files\Java\jre8
+[21:20:38] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[21:20:38] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[21:20:38] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[21:20:38] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[21:20:38] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[21:20:38] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[21:20:38] [main/ERROR]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[21:20:42] [main/ERROR]: The minecraft jar file:/C:/Users/Joshua/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeBin-1.7.10-10.13.0.1180.jar!/net/minecraft/client/ClientBrandRetriever.class appears to be corrupt! There has been CRITICAL TAMPERING WITH MINECRAFT, it is highly unlikely minecraft will work! STOP NOW, get a clean copy and try again!
+[21:20:42] [main/ERROR]: FML has been ordered to ignore the invalid or missing minecraft certificate. This is very likely to cause a problem!
+[21:20:42] [main/ERROR]: Technical information: ClientBrandRetriever was at jar:file:/C:/Users/Joshua/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeBin-1.7.10-10.13.0.1180.jar!/net/minecraft/client/ClientBrandRetriever.class, there were 0 certificates for it
+[21:20:42] [main/ERROR]: FML appears to be missing any signature data. This is not a good thing
+[21:20:42] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[21:20:42] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[21:20:43] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[21:20:44] [main/ERROR]: Unable to launch
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_05]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_05]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_05]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_05]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_05]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_05]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_05]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_05]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+Caused by: java.lang.UnsatisfiedLinkError: no lwjgl in java.library.path
+	at java.lang.ClassLoader.loadLibrary(Unknown Source) ~[?:1.8.0_05]
+	at java.lang.Runtime.loadLibrary0(Unknown Source) ~[?:1.8.0_05]
+	at java.lang.System.loadLibrary(Unknown Source) ~[?:1.8.0_05]
+	at org.lwjgl.Sys$1.run(Sys.java:73) ~[lwjgl-2.9.1.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_05]
+	at org.lwjgl.Sys.doLoadLibrary(Sys.java:66) ~[lwjgl-2.9.1.jar:?]
+	at org.lwjgl.Sys.loadLibrary(Sys.java:95) ~[lwjgl-2.9.1.jar:?]
+	at org.lwjgl.Sys.<clinit>(Sys.java:112) ~[lwjgl-2.9.1.jar:?]
+	at net.minecraft.client.Minecraft.getSystemTime(Minecraft.java:2659) ~[Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:72) ~[Main.class:?]
+	... 13 more
