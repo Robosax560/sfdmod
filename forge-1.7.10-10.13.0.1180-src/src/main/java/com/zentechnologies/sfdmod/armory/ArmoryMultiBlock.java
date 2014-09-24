@@ -1,5 +1,6 @@
 package com.zentechnologies.sfdmod.armory;
 
+import net.minecraft.entity.passive.EntityPig;
 import net.minecraft.init.Blocks;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
@@ -15,7 +16,7 @@ public class ArmoryMultiBlock extends TileEntity {
 		if (!worldObj.isRemote) {
 			if (hasMaster()) { 
 				if (isMaster()) {
-					// Put stuff you want the multiblock to do here!
+					buildEntity();
 				}
 			} else {
 				// Constantly check if structure is formed until it is.
@@ -23,6 +24,10 @@ public class ArmoryMultiBlock extends TileEntity {
 					setupStructure();
 			}
 		}
+	}
+	
+	public void buildEntity(){
+		
 	}
 
 	/** Check that structure is properly formed */
@@ -47,7 +52,6 @@ public class ArmoryMultiBlock extends TileEntity {
 
 	/** Setup all the blocks in the structure*/
 	public void setupStructure() {
-		System.err.println("Hi!");
 		for (int x = xCoord - 1; x < xCoord + 2; x++){
 			for (int y = yCoord; y < yCoord + 3; y++){
 				for (int z = zCoord - 1; z < zCoord + 2; z++) {
@@ -58,6 +62,12 @@ public class ArmoryMultiBlock extends TileEntity {
 						((ArmoryMultiBlock) tile).setMasterCoords(xCoord, yCoord, zCoord);
 						((ArmoryMultiBlock) tile).setHasMaster(true);
 						((ArmoryMultiBlock) tile).setIsMaster(master);
+						worldObj.setBlockToAir(x, y, z);
+						if(master){
+							EntityPig pig = new EntityPig(worldObj);
+							pig.setLocationAndAngles(x, y, z, 0, 0);
+							worldObj.spawnEntityInWorld(pig);
+						}
 					}
 				}
 			}
